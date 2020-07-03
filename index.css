@@ -4,15 +4,15 @@ body {
   padding: 0;
 }
 .header {
-  background-color: white;
+  background-color: pink;
   padding: 0 .5em;
 }
 .footer {
-  background-color: white;
+  background-color: red;
   padding: 0 .5em;
 }
 .main {
-  background-color: #fff8d8;
+  background-color: #eb5151;
   padding: 1em;
 }
 h1 {
