@@ -9,26 +9,14 @@
 <body>
 
 <div id="obniz-debug"></div>
-<h1>LED Switch</h1>
-<button id="on">ON</button>
-<button id="off">OFF</button>
+<h1>LED</h1>
 
 <script>
   var obniz = new Obniz("OBNIZ_ID_HERE");
   obniz.onconnect = async function () {
     var led = obniz.wired("LED", {anode:0, cathode:1});
-    $("#on").on("click",function(){
-      led.on();
-    });
-    $("#off").on("click",function(){
-      led.off();
-    });
-  };
-
-  obniz.onclose = async function(){
-    $("#on").off("click");
-    $("#off").off("click"); 
-  };
-</script>​
+    led.on();
+  }
+</script>
 </body>
 </html>
