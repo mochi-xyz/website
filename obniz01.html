@@ -12,7 +12,7 @@
 <h1>LED</h1>
 
 <script>
-  var obniz = new Obniz("OBNIZ_ID_HERE");
+  var obniz = new Obniz("5570-5054");
   obniz.onconnect = async function () {
     var led = obniz.wired("LED", {anode:0, cathode:1});
     led.on();
